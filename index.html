@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+
+</head>
+
+<body>
+<form name="f1">
+<select name="town" id="m">
+<option value="+">+</option>
+<option value="*">*</option>
+<option value="^">^</option>
+</select>
+<input type="text" id="a" placeholder="a">
+<input type="text" id="b" placeholder="b">
+<input type="text" id="c" placeholder="c">
+<input type="button" onclick="code()" value="ok">
+</form>
+<script type="text/javascript">
+function code(){
+let a=document.getElementById('a').value;
+let b=document.getElementById('b').value;
+let m=document.getElementById('m').value;
+let c=document.getElementById('c').value;
+if(m=="+"){
+alert((+a)+(+b)%c)
+}
+if(m=="*"){
+alert(a*b%c)
+}
+if(m=="^"){
+alert((a**b)%c)
+}
+}
+
+</script>
+</body>
+</html>
